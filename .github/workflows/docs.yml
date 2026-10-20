@@ -1,0 +1,34 @@
+name: Deploy Docs-as-Code to GitHub Pages
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - 'docs/**'
+      - 'README.md'
+      - 'mkdocs.yml'
+      - '.github/workflows/docs.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout del repositorio
+        uses: actions/checkout@v4
+
+      - name: Configurar Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: 3.x
+
+      - name: Instalar MkDocs y Material Theme
+        run: |
+          pip install mkdocs-material
+
+      - name: Compilar y Desplegar en GitHub Pages
+        run: |
+          mkdocs gh-deploy --config-file docs/mkdocs.yml --force

@@ -1,0 +1,18 @@
+version: '3.8'
+
+services:
+  postgres:
+    image: postgres:15-alpine
+    container_name: coffeehub_postgres
+    environment:
+      POSTGRES_DB: coffeehub_db
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: password
+    ports:
+      - "5432:5432"
+  
+  mongo:
+    image: mongo:6.0
+    container_name: coffeehub_mongo
+    ports:
+      - "27017:27017"

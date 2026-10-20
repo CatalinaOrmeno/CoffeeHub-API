@@ -1,0 +1,46 @@
+site_name: "CoffeeHub - Docs & Gestión"
+site_description: "Documentación técnica y marco de gestión Lean del proyecto"
+site_author: "Catalina Ormeño"
+
+theme:
+  name: material
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-7
+        name: Cambiar a modo oscuro
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-4
+        name: Cambiar a modo claro
+  features:
+    - navigation.tabs      # Menú horizontal superior
+    - navigation.sections  # Secciones en la barra lateral
+    - code.copy            # Botón para copiar código fuente
+
+markdown_extensions:
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.mermaid_format
+
+nav:
+  - Inicio: ../README.md
+  - Gestión Lean:
+      - Alcance: SCOPE.md
+      - Planificación y Gantt: PLANNING.md
+  - Arquitectura e Infraestructura:
+      - Arquitectura e infraestructura: INFRASTRUCTURE.md
+      - Guía de configuración: GETTING_STARTED.md
+      - Registros de Decisión (ADR):
+          - 0001 - Entra ID App Roles: adr/0001-entra-id-app-roles.md
+          - 0002 - Monolito Modular: adr/0002-monolito-modular-eventos.md
+          - 0003 - React + Vite SPA: adr/0003-react-vite-spa-frontend.md
+          - 0004 - Persistencia Políglota: adr/0004-persistencia-poliglota-sql-nosql.md
