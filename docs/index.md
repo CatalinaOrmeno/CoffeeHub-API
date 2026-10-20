@@ -140,15 +140,15 @@ La documentación se publica automáticamente en GitHub Pages cuando se modifica
 └── README.md
 ```
 
-- [Alcance y criterios de aceptación](docs/SCOPE.md)
-- [Planificación y WBS](docs/PLANNING.md)
-- [Arquitectura e infraestructura](docs/INFRASTRUCTURE.md)
+- [Alcance y criterios de aceptación](SCOPE.md)
+- [Planificación y WBS](PLANNING.md)
+- [Arquitectura e infraestructura](INFRASTRUCTURE.md)
 - [Guía de configuración](docs/GETTING_STARTED.md)
-- [Registros de decisiones (ADR)](docs/adr/)
+- [Registros de decisiones (ADR)](adr/)
 
 ## Estado del proyecto
 
 La documentación define el caso de estudio, el alcance y la arquitectura
 objetivo. Los entregables de cada fase se validan mediante compilación,
 pruebas automatizadas y revisión de los criterios de aceptación descritos en
-`docs/SCOPE.md`.
+`SCOPE.md`.
