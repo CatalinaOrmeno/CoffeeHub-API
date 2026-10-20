@@ -25,11 +25,7 @@ theme:
     - code.copy            # Botón para copiar código fuente
 
 markdown_extensions:
-  - pymdownx.superfences:
-      custom_fences:
-        - name: mermaid
-          class: mermaid
-          format: !!python/name:pymdownx.superfences.mermaid_generic_format
+  - pymdownx.superfences
 
 nav:
   - Inicio: ../README.md
