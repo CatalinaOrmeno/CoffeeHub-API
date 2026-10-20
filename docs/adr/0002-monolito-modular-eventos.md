@@ -1,7 +1,7 @@
 # ADR-0002: Monolito modular con eventos internos
 
 - **Estado:** Aceptada
-- **Fecha:** 2026-01-06
+- **Fecha:** 19-10-2026
 
 ## Contexto
 

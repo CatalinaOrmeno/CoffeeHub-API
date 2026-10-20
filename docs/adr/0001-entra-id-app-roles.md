@@ -1,8 +1,7 @@
 # ADR-0001: Microsoft Entra ID con App Roles
 
 - **Estado:** Aceptada
-- **Fecha:** 2026-01-05
-- **Decisores:** Equipo CoffeeHub
+- **Fecha:** 19-10-2026
 
 ## Contexto
 

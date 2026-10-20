@@ -1,7 +1,7 @@
 # ADR-0003: Frontend SPA con React y Vite
 
 - **Estado:** Aceptada
-- **Fecha:** 2026-01-07
+- **Fecha:** 19-10-2026
 
 ## Contexto
 

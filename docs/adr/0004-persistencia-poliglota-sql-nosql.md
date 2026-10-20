@@ -1,7 +1,7 @@
 # ADR-0004: Persistencia políglota SQL y NoSQL
 
 - **Estado:** Aceptada
-- **Fecha:** 2026-01-08
+- **Fecha:** 19-10-2026
 
 ## Contexto
 
