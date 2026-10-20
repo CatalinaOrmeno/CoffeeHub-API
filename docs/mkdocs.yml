@@ -29,7 +29,7 @@ markdown_extensions:
       custom_fences:
         - name: mermaid
           class: mermaid
-          format: !!python/name:pymdownx.superfences.mermaid_format
+          format: !!python/name:pymdownx.superfences.mermaid_generic_format
 
 nav:
   - Inicio: ../README.md
