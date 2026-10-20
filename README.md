@@ -132,8 +132,11 @@ La documentación se publica automáticamente en GitHub Pages cuando se modifica
 │   ├── GETTING_STARTED.md
 │   └── adr/
 ├── backend/
+│   └── Dockerfile
 ├── frontend/
-├── Dockerfile
+│   └── Dockerfile
+├── mkdocs.yml
+├── docker-compose.yml
 └── README.md
 ```
 
