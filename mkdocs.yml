@@ -1,6 +1,7 @@
 site_name: "CoffeeHub - Docs & Gestión"
 site_description: "Documentación técnica y marco de gestión Lean del proyecto"
 site_author: "Catalina Ormeño"
+site_url: https://catalinaormeno.github.io/CoffeeHub-API/
 
 theme:
   name: material
