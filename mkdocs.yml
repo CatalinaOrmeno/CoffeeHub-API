@@ -41,4 +41,4 @@ nav:
           - 0002 - Monolito Modular: adr/0002-monolito-modular-eventos.md
           - 0003 - React + Vite SPA: adr/0003-react-vite-spa-frontend.md
           - 0004 - Persistencia Políglota: adr/0004-persistencia-poliglota-sql-nosql.md
-          - 0005 - Manejo de entornos de ejecución: adr/0005-manejo-entornos-ejecucion.md
+          - 0005 - Manejo de entornos de ejecución: adr/0005-manejo-de-entornos-ejecucion.md
