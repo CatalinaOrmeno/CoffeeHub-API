@@ -13,8 +13,7 @@ ejecutable Spring Boot.
    auditoría.
 2. Separar los dominios mediante módulos y eventos internos de Spring.
 3. Proteger el acceso con Microsoft Entra ID, OIDC/OAuth 2.0 y App Roles.
-4. Servir una SPA React/Vite con portal público, portal de clientes y consola
-   administrativa mediante rutas protegidas.
+4. Exponer una API REST segura para clientes y administración.
 5. Mantener el costo de infraestructura en $0 USD usando servicios gratuitos,
    Docker local y beneficios del GitHub Student Developer Pack.
 6. Documentar decisiones, planificación y criterios de aceptación junto al
@@ -29,8 +28,6 @@ ejecutable Spring Boot.
 - `LowStockAlertEvent` cuando el stock queda bajo el umbral configurado.
 - Persistencia transaccional en PostgreSQL.
 - Persistencia de auditoría/eventos en MongoDB BSON.
-- SPA React + Vite + Tailwind CSS en `/`, `/portal/*` y `/admin/*`.
-- Componentes de interfaz basados en PrimeReact, Mantine UI o Shadcn UI.
 - Backend REST protegido bajo `/api/v1/**`.
 - OpenAPI/Swagger UI, Actuator, pruebas con JUnit 5 y Testcontainers.
 - Docker Compose para el entorno local y pipeline de documentación.
@@ -67,7 +64,7 @@ operación de un caso funcional sin sobreingeniería ni costos de infraestructur
 | AC-02 | Una suscripción pagada se guarda en PostgreSQL y publica `SubscriptionPaidEvent`. |
 | AC-03 | El consumo de inventario se ejecuta al recibir el evento y no permite stock negativo. |
 | AC-04 | El stock bajo genera `LowStockAlertEvent` y queda registrado en la auditoría. |
-| AC-05 | `ProtectedRoute` permite `/admin/*` solo a `ROLE_ADMIN`, `/portal/*` solo a `ROLE_CLIENT` y mantiene `/` público. |
+| AC-05 | La API protege los endpoints bajo `/api/v1/**` y aplica roles de acceso mediante JWT de Entra ID. |
 | AC-06 | El entorno local inicia PostgreSQL y MongoDB con `docker compose up -d`. |
 | AC-07 | La documentación se compila con MkDocs y sus enlaces de navegación son válidos. |
 | AC-08 | La suite de integración usa contenedores reales para PostgreSQL/MongoDB cuando corresponda. |

@@ -12,7 +12,7 @@ infraestructura.
 
 ```mermaid
 mindmap
-  root((CoffeeHub))
+  root((CoffeeHub API))
     1. Alcance e identidad
       1.1 Dominio y criterios
       1.2 Entra ID y App Roles
@@ -26,25 +26,21 @@ mindmap
       3.2 Suscripciones
       3.3 Eventos internos
       3.4 Auditoría
-    4. Frontend
-      4.1 React y Vite
-      4.2 Portal, cliente y administración
-      4.3 MSAL y rutas protegidas
-    5. Calidad
-      5.1 OpenAPI
-      5.2 Testcontainers
-      5.3 Actuator
-    6. Entrega
-      6.1 Dockerfile
-      6.2 CI/CD
-      6.3 README y publicación
+    4. Calidad
+      4.1 OpenAPI
+      4.2 Testcontainers
+      4.3 Actuator
+    5. Entrega
+      5.1 Dockerfile
+      5.2 CI/CD
+      5.3 README y publicación
 ```
 
 ## Cronograma
 
 ```mermaid
 gantt
-  title CoffeeHub — hoja de ruta de seis semanas
+  title CoffeeHub API — hoja de ruta de seis semanas
   dateFormat  YYYY-MM-DD
   axisFormat  %d/%m
   section Alcance
@@ -56,9 +52,6 @@ gantt
   section Backend
   Catálogo y suscripciones              :w3, 2026-01-19, 7d
   Eventos y auditoría                  :w3b, after w3, 4d
-  section Frontend
-  React, Vite y vistas                 :w4, 2026-01-26, 5d
-  MSAL, roles y rutas protegidas       :w4b, after w4, 5d
   section Calidad
   Swagger y pruebas de integración     :w5, 2026-02-02, 7d
   section Entrega
@@ -75,9 +68,9 @@ seguimiento real se realiza mediante issues y pull requests.
 | 1 | Investigación y alcance | Dominio, Entra ID, alcance y ADR | `SCOPE.md`, ADR-0001 |
 | 2 | Infraestructura y datos | Spring Boot, Compose y entidades PostgreSQL | Proyecto compilable y bases locales |
 | 3 | Backend y REST API | Catálogo, suscripciones, listeners, MongoDB y Swagger | Endpoints REST funcionales |
-| 4 | Frontend y auth | React, Vite, MSAL, vistas y rutas protegidas | SPA conectada a la API |
-| 5 | Pruebas y calidad | Testcontainers y flujos OIDC del frontend | Suite y tokens validados |
-| 6 | DevOps y despliegue | Dockerfile, Render/Vercel, README y diagramas | Repositorio listo para portafolio |
+| 4 | Integración y seguridad | Validación OIDC, roles y consumo seguro de la API | Flujo seguro desplegable |
+| 5 | Pruebas y calidad | Testcontainers y flujos OIDC del backend | Suite y tokens validados |
+| 6 | DevOps y despliegue | Dockerfile, Render/Railway, README y diagramas | Repositorio listo para portafolio |
 
 ## Definición de terminado
 

@@ -1,4 +1,4 @@
-# ADR-0005: Manejo de entornos de ejecución
+# ADR-0004: Manejo de entornos de ejecución
 
 - **Estado:** Aceptada
 - **Fecha:** 19-10-2026

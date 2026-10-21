@@ -1,5 +1,5 @@
-site_name: "CoffeeHub - Docs & Gestión"
-site_description: "Documentación técnica y marco de gestión Lean del proyecto"
+site_name: "CoffeeHub API - Docs & Gestión"
+site_description: "Documentación técnica y marco de gestión Lean del backend"
 site_author: "Catalina Ormeño"
 site_url: https://catalinaormeno.github.io/CoffeeHub-API/
 
@@ -21,9 +21,9 @@ theme:
         icon: material/brightness-4
         name: Cambiar a modo claro
   features:
-    - navigation.tabs      # Menú horizontal superior
-    - navigation.sections  # Secciones en la barra lateral
-    - code.copy            # Botón para copiar código fuente
+    - navigation.tabs
+    - navigation.sections
+    - code.copy
 
 markdown_extensions:
   - pymdownx.superfences
@@ -39,6 +39,5 @@ nav:
       - Registros de Decisión (ADR):
           - 0001 - Entra ID App Roles: adr/0001-entra-id-app-roles.md
           - 0002 - Monolito Modular: adr/0002-monolito-modular-eventos.md
-          - 0003 - React + Vite SPA: adr/0003-react-vite-spa-frontend.md
-          - 0004 - Persistencia Políglota: adr/0004-persistencia-poliglota-sql-nosql.md
-          - 0005 - Manejo de entornos de ejecución: adr/0005-manejo-de-entornos-ejecucion.md
+          - 0003 - Persistencia Políglota: adr/0003-persistencia-poliglota-sql-nosql.md
+          - 0004 - Manejo de entornos de ejecución: adr/0004-manejo-de-entornos-ejecucion.md
